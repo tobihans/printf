@@ -23,6 +23,9 @@ int _puts(char *str)
 	char *iter;
 	int count;
 
+	if (str == NULL)
+		return (0);
+
 	for (iter = str, count = 0; *iter; iter++, count++)
 		_putchar(*iter);
 
